@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
   plugins: [
     react(),
     tailwindcss(),
@@ -14,15 +13,4 @@ export default defineConfig({
     open: true,
     host: true,
   },
-  build: {
-    outDir: 'assets',
-    emptyOutDir: false,
-    rollupOptions: {
-      input: './src/main.jsx',
-      output: {
-        entryFileNames: 'app.js',
-        assetFileNames: 'app.[ext]'
-      }
-    }
-  }
 })
