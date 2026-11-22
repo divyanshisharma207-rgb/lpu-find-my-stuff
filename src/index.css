@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coral: #FA8952;
+  --color-amber: #FABF52;
+  --color-apricot: #FAA652;
+  --color-blush: #FAA596;
+  --color-sun: #FAD352;
+  --color-cream: #FAD3AD;
+}
+
+:root {
+  --color-1: #FA8952;
+  --color-2: #FABF52;
+  --color-3: #FAA652;
+  --color-4: #FAA596;
+  --color-5: #FAD352;
+  --color-6: #FAD3AD;
+}
+
+@layer base {
+  body {
+    background-color: #faf8f5;
+    color: #1e293b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+::selection {
+  background-color: #FA8952;
+  color: #ffffff;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FAA65244;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FA895288;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Gradients for the 6-Color Warm Palette */
+.bg-warm-hero {
+  background: linear-gradient(135deg, #FA8952 0%, #FAA652 35%, #FABF52 70%, #FAD352 100%);
+}
+
+.bg-warm-card {
+  background: linear-gradient(180deg, #ffffff 0%, #FAD3AD15 100%);
+}

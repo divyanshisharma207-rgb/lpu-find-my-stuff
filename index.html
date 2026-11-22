@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FA8952'/><text y='68' x='50' font-family='system-ui, sans-serif' font-size='42' font-weight='900' fill='white' text-anchor='middle'>LPU</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LPU Find My Stuff | Campus Lost &amp; Found Portal</title>
+    <meta name="description" content="Lovely Professional University official campus lost &amp; found network with secret owner verification, status tracking, and private student masked messaging." />
+    
+    <!-- Pre-compiled stylesheet so VS Code Live Server renders perfectly -->
+    <link rel="stylesheet" href="./assets/app.css" />
+  </head>
+  <body class="bg-[#faf8f5] text-slate-900 antialiased">
+    <div id="root"></div>
+
+    <!-- Universal Loader: Runs directly on Live Server (port 5500) and Vite (port 5173) -->
+    <script>
+      (function() {
+        var isVite = window.location.port === '5173';
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = isVite ? '/src/main.jsx' : './assets/app.js';
+        document.body.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
